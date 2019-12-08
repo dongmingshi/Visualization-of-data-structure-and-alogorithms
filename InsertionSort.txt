@@ -1,0 +1,8 @@
+/*
+Insertion sort is a sorting algorithm that places
+each element at its correct position each time in
+iteration from first element of given array.
+*/
+for i <- 0 to n-1
+    for j <- i to 1 and data[j] < data[j-1]
+        swap data[j], data[j-1]
