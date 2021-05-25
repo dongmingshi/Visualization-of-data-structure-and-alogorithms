@@ -1,0 +1,10 @@
+Kruskal(G)
+    sort(E)
+    index ->0. n -> 0
+    while n < |V| - 1
+        get two vertices u, v in E[index]
+        if u, v not form a circle
+            U -> U union u,v
+            T -> T union E[index]
+            n++
+        index++

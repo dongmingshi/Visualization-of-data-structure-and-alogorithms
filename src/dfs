@@ -1,0 +1,5 @@
+dfs(G, vertex)
+    vertex.visited = true
+    for each neighbor of vertex
+        if neighbor is not visited
+            dfs(G, neighbor)

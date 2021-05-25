@@ -1,0 +1,9 @@
+delete(value)
+    target = search(root, value)
+    parent = getParent(target)
+    if target.left == null and target.right == null
+        remove target from parent
+    else if target.left != null and target.right != null
+        replace target by minimum of right subtree
+    else
+        replace target by remaining subtree

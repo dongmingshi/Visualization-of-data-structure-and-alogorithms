@@ -1,0 +1,11 @@
+Dijkstra(G, source)
+    distance[source] -> 0
+    add distance[source] to queue
+    while queue is not empty
+        extract min
+        for each unvisited neighbor of min
+            newDistance -> distance[min] + weight[min][neighbor]
+            if newDistance < distance[neighbor]
+                prev[neighbor] -> min
+                distance[neighbor] -> newDistance
+                update newDistance to queue

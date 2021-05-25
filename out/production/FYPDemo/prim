@@ -1,0 +1,8 @@
+Prim(G, startVertex)
+    T = {}
+    U = {startVertex}
+    for n -> 1 to |V| - 1
+        for u in U, v in V - U find minimum edge (u,v)
+        T = T union {(u,v)}
+        U = U union {v}
+

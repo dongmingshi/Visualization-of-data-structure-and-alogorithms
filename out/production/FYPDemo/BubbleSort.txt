@@ -1,0 +1,10 @@
+/*
+compare each pair of adjacent elements and
+exchange them if they are out of order. Each
+time bubbling up the maximum to the last position
+of unordered part.
+*/
+for i <- 0 to n-2
+    for j <- 0 to n-2-i
+        if data[j] > data[j+1]
+            swap data[j], data[j+1]

@@ -1,0 +1,12 @@
+delete(value)
+    target = search(root, value)
+    parent = getParent(target)
+    if target.left == null and target.right == null
+        remove target from parent
+        balance parent node
+    else if target.left != null and target.right != null
+        replace target by minimum of right subtree
+        balance parent of right minimum node
+    else
+        replace target by remaining subtree
+        balance parent node

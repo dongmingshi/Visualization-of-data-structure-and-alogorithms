@@ -1,0 +1,7 @@
+Node search(node, value)
+    if node.value == value
+        return node;
+    else if node.value > value
+        return search(node.left, value)
+    else
+        return search(node.right, value)

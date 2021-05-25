@@ -1,0 +1,22 @@
+MergeSort(left, right)
+    if left >= right
+        return
+    mid = (left + right)/2
+    MergeSort(left, mid)
+    MergeSort(mid + 1, right)
+    Merge(left, mid, right)
+
+Merge(left, mid, right)
+    temp[] =  copy(arr, left, right)
+    i = left, j = mid + 1
+    for k -> left to right
+        if i > mid
+            arr[k] = temp[i - left] i++
+        else if j > r
+            arr[k] = temp[j - left] j++
+        else if temp[i - left] <= temp[j - left]
+            arr[k] = temp[i - left] i++
+        else
+            arr[k] = temp[j - left] j++
+
+

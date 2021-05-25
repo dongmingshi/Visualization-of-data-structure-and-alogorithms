@@ -1,0 +1,9 @@
+bfs(G, vertex)
+    vertex.visited = true
+    queue.add(vertex)
+    while queue is not empty
+        queue.pop()
+        for each neighbor of vertex
+            if neighbor is not visited
+                neighbor.visited = true
+                queue.add(neighbor)

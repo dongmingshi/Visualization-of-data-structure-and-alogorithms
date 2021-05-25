@@ -1,0 +1,11 @@
+/*
+Scan the unordered part of given array to find its
+smallest element and exchange with the first element
+in unsorted part.
+*/
+for i <- 0 to n-1
+    min <- i
+    for j <- i+1 to n-1
+        if data[j] < data[min]
+            min = j
+    swap data[i], data[min]
